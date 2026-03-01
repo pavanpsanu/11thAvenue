@@ -470,8 +470,9 @@ section::before {
 
 @media (max-width: 768px) {
     .form-row {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }
 
@@ -481,7 +482,6 @@ section::before {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    height: 100%;
 }
 
 .input-group textarea {

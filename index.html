@@ -7,6 +7,7 @@
     <title>The 11th Avenue</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -111,24 +112,28 @@
     <!-- Welcome Section (The Property) -->
     <section class="welcome-section reveal" id="about">
         <div class="container text-center">
-            <h4 class="sub-heading">THE PROPERTY</h4>
-            <h2>Welcome to The 11th Avenue Accommodation</h2>
-            <h2>Bangalore</h2>
+            <div data-aos="zoom-in">
+                <h4 class="sub-heading">THE PROPERTY</h4>
+                <h2>Welcome to The 11th Avenue Accommodation</h2>
+                <h2>Bangalore</h2>
+            </div>
             <p class="welcome-text">Our serviced apartments are nestled in the Heart of Malleshwaram, and offer a
                 peaceful retreat amidst the bustling city, combining the old and cosy charm of Bangalore with a modern
                 ambience. The property offers easy and convenient access to popular restaurants, hospitals, shopping
                 malls, and other business centres in Bangalore.</p>
 
             <div class="fan-images">
-                <img src="images/Building/building_2.jpg" alt="Property Highlight 1" class="fan-img fan-1"
-                    onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=400&q=80'">
-                <img src="images/Living%20Room/living_room_2.jpg" alt="Property Highlight 2" class="fan-img fan-2"
-                    onerror="this.src='https://images.unsplash.com/photo-1600607687920-4e2a09c15468?auto=format&fit=crop&w=400&q=80'">
-                <img src="images/Dining%20&%20Kitchen/dining_and_kitchen_2.jpg" alt="Property Highlight 3"
-                    class="fan-img fan-3"
-                    onerror="this.src='https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80'">
-                <img src="images/Bedroom/bedroom_2.jpg" alt="Property Highlight 4" class="fan-img fan-4"
-                    onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80'">
+                <div data-aos="fade-right">
+                    <img src="images/Building/building_2.jpg" alt="Property Highlight 1" class="fan-img fan-1"
+                        onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=400&q=80'">
+                    <img src="images/Living%20Room/living_room_2.jpg" alt="Property Highlight 2" class="fan-img fan-2"
+                        onerror="this.src='https://images.unsplash.com/photo-1600607687920-4e2a09c15468?auto=format&fit=crop&w=400&q=80'">
+                    <img src="images/Dining%20&%20Kitchen/dining_and_kitchen_2.jpg" alt="Property Highlight 3"
+                        class="fan-img fan-3"
+                        onerror="this.src='https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80'">
+                    <img src="images/Bedroom/bedroom_2.jpg" alt="Property Highlight 4" class="fan-img fan-4"
+                        onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80'">
+                </div>
             </div>
         </div>
     </section>
@@ -322,9 +327,11 @@
 
     <section class="features" id="accommodation">
         <div class="container">
-            <div class="section-header reveal">
-                <h2>Premium <span>Accommodation</span></h2>
-                <p>Curated spaces and amenities designed for a seamless stay.</p>
+            <div data-aos="zoom-in">
+                <div class="section-header reveal">
+                    <h2>Premium <span>Accommodation</span></h2>
+                    <p>Curated spaces and amenities designed for a seamless stay.</p>
+                </div>
             </div>
 
             <div class="bento-grid">
@@ -1090,6 +1097,11 @@
 
             requestAnimationFrame(autoScroll);
         }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

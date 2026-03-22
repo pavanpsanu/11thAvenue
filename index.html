@@ -61,9 +61,9 @@
                 The 11th <span>Avenue</span>
             </div>
             <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#accommodation">Accommodation</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#features">Experience</a></li>
-                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
@@ -73,7 +73,10 @@
                     </button>
                 </li>
             </ul>
-            <a href="#booking" class="btn btn-primary nav-btn">Book Now</a>
+            <div class="nav-actions" style="display: flex; gap: 1rem;">
+                <a href="#contact" class="btn btn-outline nav-btn">Contact</a>
+                <a href="#booking" class="btn btn-primary nav-btn">Book Now</a>
+            </div>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -109,7 +112,8 @@
     <section class="welcome-section reveal" id="about">
         <div class="container text-center">
             <h4 class="sub-heading">THE PROPERTY</h4>
-            <h2>Welcome to The 11th Avenue, Bangalore</h2>
+            <h2>Welcome to The 11th Avenue Accommodation</h2>
+            <h2>Bangalore</h2>
             <p class="welcome-text">Our serviced apartments are nestled in the Heart of Malleshwaram, and offer a
                 peaceful retreat amidst the bustling city, combining the old and cosy charm of Bangalore with a modern
                 ambience. The property offers easy and convenient access to popular restaurants, hospitals, shopping
@@ -135,20 +139,20 @@
         <div class="container">
             <div class="section-header reveal">
                 <h2>Our <span>Space</span></h2>
-                <div class="rating-badge">
+                <!-- <div class="rating-badge">
                     <i class="fas fa-star"></i>Rated 4.2 ⭐ on Google <span>195+ Guests Hosted</span>
-                </div>
+                </div> -->
                 <p>Architecturally designed space tailored for comfort and modern living.</p>
             </div>
 
             <div class="gallery-filters reveal">
-                <button class="filter-btn" data-filter="all">All</button>
+                <!-- <button class="filter-btn" data-filter="all">All</button> -->
                 <button class="filter-btn active" data-filter="building">Building</button>
                 <button class="filter-btn" data-filter="living">Living Room</button>
                 <button class="filter-btn" data-filter="dining">Dining & Kitchen</button>
                 <button class="filter-btn" data-filter="bedroom">Bedroom</button>
                 <button class="filter-btn" data-filter="bathroom">Bathroom</button>
-                <button class="filter-btn" data-filter="laundry">Laundry</button>
+                <!-- <button class="filter-btn" data-filter="laundry">Laundry</button> -->
             </div>
 
             <div class="gallery-grid">
@@ -316,39 +320,58 @@
         </div>
     </section>
 
-
-    <section class="features" id="features">
+    <section class="features" id="accommodation">
         <div class="container">
             <div class="section-header reveal">
-                <h2>The 11th Avenue <span>Standard</span></h2>
-                <p>Curated amenities designed to provide an unparalleled stay.</p>
+                <h2>Premium <span>Accommodation</span></h2>
+                <p>Curated spaces and amenities designed for a seamless stay.</p>
             </div>
 
             <div class="bento-grid">
-                <div class="bento-item bento-large glass-panel reveal">
-                    <i class="fas fa-shield-alt icon-glow"></i>
-                    <h3>Fortress Security</h3>
-                    <p>Biometric access, 24/7 CCTV, and elite concierge security ensuring absolute privacy.</p>
-                </div>
+
                 <div class="bento-item glass-panel reveal">
-                    <i class="fas fa-bolt icon-glow"></i>
-                    <h3>Gigabit Fiber</h3>
-                    <p>Uncapped, hyper-fast internet for flawless streaming and remote work.</p>
+                    <i class="fas fa-home icon-glow"></i>
+                    <h3>2 Bedroom Apartment</h3>
+                    <p>Spacious fully furnished apartment with living room, kitchen, and modern bathrooms.</p>
                 </div>
+
+                <div class="bento-item glass-panel reveal">
+                    <i class="fas fa-kitchen-set icon-glow"></i>
+                    <h3>Fully Equipped Kitchen</h3>
+                    <p>Refrigerator, cooking appliances, washing machine for a complete stay.</p>
+                </div>
+
                 <div class="bento-item glass-panel reveal">
                     <i class="fas fa-couch icon-glow"></i>
-                    <h3>Bespoke Interiors</h3>
-                    <p>Award-winning minimalist design with premium European furnishings.</p>
+                    <h3>Comfort & Amenities</h3>
+                    <p>High-speed WiFi, Smart TV, AC, and premium bedding.</p>
                 </div>
-                <div class="bento-item bento-wide glass-panel reveal">
-                    <i class="fas fa-concierge-bell icon-glow"></i>
-                    <h3>White-Glove Service</h3>
-                    <p>From private chefs to daily housekeeping, our team is invisible yet always available at the tap
-                        of a screen.</p>
+
+                <div class="bento-item glass-panel reveal">
+                    <i class="fas fa-car icon-glow"></i>
+                    <h3>Car Parking</h3>
+                    <p>Secure on-site parking available for all guests.</p>
                 </div>
+
+                <div class="bento-item glass-panel reveal">
+                    <i class="fas fa-shield-alt icon-glow"></i>
+                    <h3>24/7 Security</h3>
+                    <p>Biometric access, CCTV monitoring, and secure entry.</p>
+                </div>
+
+                <div class="bento-item glass-panel reveal">
+                    <i class="fas fa-bolt icon-glow"></i>
+                    <h3>High-Speed Internet</h3>
+                    <p>Fast and reliable fiber connection for work & entertainment.</p>
+                </div>
+
+
+
             </div>
         </div>
     </section>
+
+
 
     <section class="reviews" id="reviews">
         <div class="container">
@@ -356,7 +379,7 @@
                 <h2>Guest <span>Testimonials</span></h2>
                 <p>Hear what our guests have to say about their experience.</p>
             </div>
-            <div class="bento-grid reviews-grid">
+            <div class="reviews-grid">
                 <div class="glass-panel reveal testimonial-card">
                     <div class="stars">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -384,6 +407,42 @@
                         detail in the amenities is incredible."</p>
                     <div class="author">- Amit D.</div>
                 </div>
+                <div class="glass-panel reveal testimonial-card" style="transition-delay: 0.3s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Perfect for families. The kitchen was a big plus for our long stay. Malleshwaram
+                        has such a nostalgic yet modern vibe."</p>
+                    <div class="author">- Priya M.</div>
+                </div>
+                <div class="glass-panel reveal testimonial-card" style="transition-delay: 0.4s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Extremely safe and secure. The biometric entry and 24/7 monitoring gave me peace
+                        of mind throughout my stay."</p>
+                    <div class="author">- Vikram S.</div>
+                </div>
+                <div class="glass-panel reveal testimonial-card" style="transition-delay: 0.5s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"The best direct booking discounts I've found in Bangalore. Very professional
+                        management and the place is as aesthetic as the photos."</p>
+                    <div class="author">- Ananya R.</div>
+                </div>
+                <div class="glass-panel reveal testimonial-card" style="transition-delay: 0.6s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Ideal for work trips. High-speed internet is reliable and the location is quiet
+                        enough for meetings but close to everything."</p>
+                    <div class="author">- Rahul T.</div>
+                </div>
             </div>
         </div>
     </section>
@@ -404,7 +463,7 @@
                 </div>
                 <div class="booking-form-container">
                     <form class="booking-form-standalone" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="5fb76092-42f3-481c-b98a-804e42d238b7">
+                        <input type="hidden" name="access_key" value="5f4ba076-81f5-4f06-9aed-70b46bbe3802">
                         <div class="input-group">
                             <label>Name</label>
                             <input type="text" name="name" placeholder="Your Name" required>
@@ -413,6 +472,7 @@
                             <label>Email</label>
                             <input type="email" name="email" placeholder="Your Email" required>
                         </div>
+
                         <div class="form-row">
                             <div class="input-group">
                                 <label>Check-in Date</label>
@@ -424,9 +484,8 @@
                             </div>
                         </div>
                         <div class="input-group">
-                            <label>Additional Details</label>
-                            <textarea name="message" placeholder="Please let us know how we can help you..." rows="4"
-                                required></textarea>
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" placeholder="Enter your phone number" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-gradient btn-full">Send Request <i
                                 class="fas fa-paper-plane"></i></button>
@@ -435,6 +494,9 @@
             </div>
         </div>
     </section>
+
+
+
 
     <section class="cinematic-cta reveal">
         <div class="cta-content">
@@ -474,11 +536,35 @@
 
                 <div class="faq-item glass-panel">
                     <div class="faq-question">
-                        <h3>Do you allow pets?</h3>
+                        <h3>Are laundry services provided? Is hot water available 24/7?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Currently, we do not allow pets to ensure the comfort of all our guests.</p>
+                        <p>Yes, we offer professional laundry services and the building is equipped with 24/7 hot water
+                            supply for all apartments.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel">
+                    <div class="faq-question">
+                        <h3>Are appliances provided in the apartments? Is there an elevator?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each apartment is fully equipped with modern appliances including a refrigerator, cooking
+                            stovetops, and a washing machine. The property also features a high-speed elevator for
+                            convenient access to all floors.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-panel">
+                    <div class="faq-question">
+                        <h3>Are pets allowed at the serviced apartment?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, pets are not allowed at the property to ensure a comfortable and allergy-free environment
+                            for all our guests.</p>
                     </div>
                 </div>
             </div>
@@ -501,7 +587,7 @@
                             <p>#67, 11th main road Malleshwaram Bangalore- 560003<br>
                                 <small>(Landmark: Next to Manipal Northside Hospital)</small>
                             </p>
-                            <a href="https://www.google.com/maps/dir//11th+Main+Rd,+11th+Cross+Rd,+Malleshwaram,+Bengaluru,+Karnataka+560003"
+                            <a href="https://www.google.com/maps/dir//The+11th+Avenue/@13.0014398,77.5588281,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae1766417111a3:0x94787bbc218b54f7!2m2!1d77.5588281!2d13.0014398"
                                 target="_blank" class="directions-link"><i class="fas fa-external-link-alt"></i> Get
                                 Directions</a>
                         </div>
@@ -524,7 +610,7 @@
                 </div>
                 <div class="map-container">
                     <iframe
-                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Manipal%20Hospital%20Malleshwaram,%20Bangalore+(The%2011th%20Avenue)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.536980907535!2d77.55882807829127!3d13.00143975461354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1766417111a3%3A0x94787bbc218b54f7!2sThe%2011th%20Avenue!5e0!3m2!1sen!2sin!4v1774112134185!5m2!1sen!2sin"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -547,19 +633,19 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#accommodation">Accommodation</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#features">Experience</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-newsletter">
+            <!-- <div class="footer-newsletter">
                 <h3>Get in Touch</h3>
                 <div class="newsletter-ui">
                     <input type="email" placeholder="Enter your email">
                     <button><i class="fas fa-paper-plane"></i></button>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 The 11th Avenue. All Rights Reserved.</p>
@@ -964,6 +1050,46 @@
                 closePromoPopup();
             }
         });
+
+        // Auto-Scroll Testimonials Logic
+        const reviewsGrid = document.querySelector('.reviews-grid');
+        if (reviewsGrid) {
+            // Clone items for infinite loop
+            const items = Array.from(reviewsGrid.children);
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                reviewsGrid.appendChild(clone);
+            });
+
+            let isPaused = false;
+            let scrollSpeed = 0.8; // pixels per frame
+            let scrollPos = reviewsGrid.scrollLeft;
+
+            const autoScroll = () => {
+                if (!isPaused) {
+                    scrollPos += scrollSpeed;
+                    if (scrollPos >= reviewsGrid.scrollWidth / 2) {
+                        scrollPos = 0;
+                    }
+                    reviewsGrid.scrollLeft = scrollPos;
+                }
+                requestAnimationFrame(autoScroll);
+            };
+
+            reviewsGrid.addEventListener('mouseenter', () => isPaused = true);
+            reviewsGrid.addEventListener('mouseleave', () => isPaused = false);
+            reviewsGrid.addEventListener('touchstart', () => isPaused = true);
+            reviewsGrid.addEventListener('touchend', () => isPaused = false);
+
+            // Interaction to reset position if manually scrolled
+            reviewsGrid.addEventListener('scroll', () => {
+                if (isPaused) {
+                    scrollPos = reviewsGrid.scrollLeft;
+                }
+            });
+
+            requestAnimationFrame(autoScroll);
+        }
     </script>
 </body>
 

@@ -1287,16 +1287,32 @@ footer {
 
 /* Testimonials */
 .reviews-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: auto;
+    display: flex;
+    overflow-x: auto;
+    /* scroll-snap-type: x mandatory; */ /* Disabled for smooth auto-scroll */
+    gap: 2rem;
+    padding: 2rem 1rem 4rem 1rem;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    -webkit-overflow-scrolling: touch;
+}
+
+.reviews-grid::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
 }
 
 .testimonial-card {
+    flex: 0 0 400px;
+    scroll-snap-align: center;
     padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     text-align: left;
+    min-height: 320px;
 }
 
 .testimonial-card .stars i {
@@ -1316,6 +1332,12 @@ footer {
     font-weight: 700;
     color: var(--text-muted);
     margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        flex: 0 0 85%;
+    }
 }
 
 /* Standalone Booking Section */
